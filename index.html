@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    backgroundImage: {
+                        'hero': "url('/Rectangle_1.png')"
+                    },
+                    colors: {
+                        pigma: '#7F56DA'
+                    },
+                    fontSize: {
+                        'p': ['60px', '160%']
+                    }
+                }
+            }
+        }
+    </script>
+    <script src="https://kit.fontawesome.com/20b6197d52.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div class="flex justify-between flex-row-reverse max-h-screen">
+        <div class="w-2/4 bg-white flex justify-center items-center">
+            <main class="w-4/6">
+
+                <div class="mb-6 ">
+                    <h1 class="font-medium text-3xl mb-2">Join over 25 milion
+                        <br>learns from around the globe
+                    </h1>
+                    <p class="text-grey-600">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae obcaecati fuga iste deserunt
+                        accusamus magnam sunt,
+                        eaque placeat fugiat inventore nemo ipsum aut corrupti nesciunt facilis, ullam in, sed quod
+                        quidem iure exercitationem fugit deleniti quisquam. Qui molestias vero iste.
+                    </p>
+                </div>
+
+                <div class="mb-3">
+                    <label for="email" class="font-medium  text-lg">Username</label>
+                    <div
+                        class="flex mt-2 px-4 py-4 rounded-md border shadow-md w-full hover:border-pigma focus:outline-none focus:ring transition duration-200">
+                        <i class="fa-regular fa-user pt-1.5"></i>
+                        <input type="email" name="email" id="email" placeholder="Input your Username"
+                            class="w-full focus:outline-none pl-5">
+                    </div>
+                </div>
+
+                <div class="mb-3">
+                    <label for="email" class="font-medium  text-lg">Email</label>
+                    <div
+                        class="flex mt-2 px-4 py-4 rounded-md border shadow-md w-full hover:border-pigma focus:outline-none focus:ring transition duration-200">
+                        <i class="fa-regular fa-message pt-1.5"></i>
+                        <input type="email" name="email" id="email" placeholder="Input your email"
+                            class="w-full focus:outline-none pl-5">
+                    </div>
+                </div>
+
+                <div class="mb-3">
+                    <label for="email" class="font-medium  text-lg">Password</label>
+                    <div
+                        class="flex mt-2 px-4 py-4 rounded-md border shadow-md w-full hover:border-pigma focus:outline-none focus:ring transition duration-200">
+                        <i class="fa-solid fa-lock pt-1.5"></i>
+                        <input type="email" name="email" id="email" placeholder="Input your password"
+                            class="w-full focus:outline-none pl-5">
+                    </div>
+                </div>
+
+                <div class="mb-5 flex justify-between">
+                    <div>
+                        <input type="checkbox" name="apa aja blh" id="cek" class="accent-pigma">
+                        <label for="cek">I agree all statemens include in <span class="text-pigma">Terms of us</span>
+                        </label>
+                    </div>
+                </div>
+
+                <button class="border rounded-lg bg-pigma font-medium text-white px-4 py-4 mt-2 w-full 
+                hover:bg-white hover:text-pigma hover:border-pigma transition">Start Cooding Now</button>
+
+                <div class="mt-3 text-center">
+                    <h2>Already a member? <span class="text-pigma">Login</span></h2>
+                </div>
+
+
+        </div>
+
+        <div class="w-2/4 bg-hero min-h-screen bg-cover flex items-center justify-center">
+            <div class="w-2/3 h-4/5 flex flex-col justify-between">
+                <h1 class="font-medium text-4xl text-white ">Code.</h1>
+                <div class="">
+                    <h1 class="font-medium text-p text-white ">Learn to code. Interactively. For free.
+                    </h1>
+
+                    <button class="w-2/6 bg-white rounded-full p-3 flex items-center mt-10">
+                        <i class="fa-brands fa-youtube text-pink-500 text-3xl"></i>
+                        <h2 class="ml-3 text-pigma font-medium">Watch Demo</h2>
+                    </button>
+                </div>
+
+
+                <div class="flex text-white justify-center items-center">
+                    <ul class="flex gap-4 text-lg">
+                        <li class="list-none">Home</li>
+                        <li class="list-none">Tour</li>
+                        <li class="list-none">Course</li>
+                        <li class="list-none">Articles</li>
+                        <li class="list-none">Blog</li>
+                    </ul>
+                </div>
+
+
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
